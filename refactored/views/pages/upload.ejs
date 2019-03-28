@@ -1,0 +1,34 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"/>
+      <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="/">
+          <img src="//venturebeat.com/wp-content/uploads/2018/07/microsoft-logo.jpg?fit=400%2C200&strip=all" width="100" alt="">
+      </a>
+      <small class="text-muted">Azure Discovery Day 2019<br>Quick & Dirty Demo</small>   
+    </nav>
+    <div class="container ">
+        <form ref='uploadForm' 
+        id='uploadForm' 
+        action='/upload' 
+        method='post' 
+        encType="multipart/form-data"
+        class="col-lg-3 col-sm-12">
+        <div class="form-group">
+            <label for="file4upload">File to upload</label>
+            <div class="custom-file">
+                <input type="file" name="file4storage" id="file4upload" class="custom-file-input"/>
+                <label class="custom-file-label" for="file4upload">Choose file</label>
+              </div>
+            <small id="emailHelp" class="form-text text-muted">Browse for the file to upload.</small>
+        </div>
+          <input type='submit' class="btn btn-primary" value='Upload!' />
+      </form> 
+    </div>
+    
+  </body>
+</html>

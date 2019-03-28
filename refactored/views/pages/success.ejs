@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"/>
+        <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+                <img src="//venturebeat.com/wp-content/uploads/2018/07/microsoft-logo.jpg?fit=400%2C200&strip=all" width="100" alt="">
+            </a>
+            <small class="text-muted">Azure Discovery Day 2019<br>Quick & Dirty Demo</small>   
+        </nav>
+        <div class="alert alert-success" role="alert">File Upload successful!</div>
+        <div class="container">
+            <div class="card" style="width: 20rem;"">
+                <img src="<%= fileUrl %>" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">File name : <%= fileSummary.name %> </h5>
+                    <b>Image Attributes</b>
+                    <p class="card-text">
+                        <pre><%= JSON.stringify(visionResult,null, '  ') %></pre>
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

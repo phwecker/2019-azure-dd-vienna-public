@@ -1,0 +1,33 @@
+{
+  "name": "2019-azure-dd-vienna-public",
+  "version": "1.0.0",
+  "description": "Sample NodeJS application used for Azure Discovery Day Vienna, 26.3.2019",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "original": "node original/index.js",
+    "refactored": "node refactored/index.js",
+    "rearchitected": "node rearchitected/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phwecker/2019-azure-dd-vienna-public.git"
+  },
+  "author": "Philipp Weckerle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phwecker/2019-azure-dd-vienna-public/issues"
+  },
+  "homepage": "https://github.com/phwecker/2019-azure-dd-vienna-public#readme",
+  "dependencies": {
+    "azure-storage": "^2.10.2",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.3-alpha.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "into-stream": "^5.0.0",
+    "yargs": "^13.2.2"
+  }
+}
