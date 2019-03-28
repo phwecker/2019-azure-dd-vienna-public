@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "original": "node original/index.js",
-    "refactored": "node refactored/index.js",
-    "rearchitected": "node rearchitected/index.js"
+    "o": "node original/index.js",
+    "r": "node refactored/index.js",
+    "a": "node rearchitected/index.js"
   },
   "repository": {
     "type": "git",
