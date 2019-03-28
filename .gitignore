@@ -1,3 +1,5 @@
 # .gitignore 
 #
 /tmp
+/node_modules
+.vscode
