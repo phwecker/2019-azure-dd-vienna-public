@@ -25,6 +25,7 @@ const blobStorage = storage.createBlobService(StorageConnectionString);
 // Settings
 
 app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, '/views'));
 
 app.use(fileUpload({
     useTempFiles : true,
@@ -41,6 +42,7 @@ const listBlobs = async (containerName) => {
             if (err) {
                 reject(err);
             } else {
+                console.log(data.entries)
                 resolve({blobs: data.entries});
             }
         })
@@ -125,7 +127,21 @@ const visionDescribe = async (imageUrl) => {
 // Endpoints
 
 app.get('/', (req,res) => {
-    res.render('pages/upload');
+    let blobUrls = [];
+    listBlobs(DefaultContainerName)
+    .then((allBlobs)=>{
+        for (i=0; i < allBlobs.blobs.length; i++)
+        {
+            blobUrls[i] = getBlobURL(DefaultContainerName,allBlobs.blobs[i].name);
+        }
+        Promise.all(blobUrls).then((blobUrls)=> {
+            res.render('pages/upload',
+            { 
+                listBlobs : allBlobs,
+                urls : blobUrls
+            });
+        });
+    });
 })
 
 app.post('/upload', async function(req, res) {
