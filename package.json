@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "o": "node original/index.js",
-    "r": "node refactored/index.js",
+    "h": "node rehost/index.js",
+    "f": "node refactored/index.js",
     "a": "node rearchitected/index.js"
   },
   "repository": {
