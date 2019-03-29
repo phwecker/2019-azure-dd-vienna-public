@@ -12,10 +12,11 @@ In order to follow along with the code in this example, you will need to have
 - NodeJS (>= 8) installed
 - docker installed
 - Azure Storage Account - BLOB Storage provisioned
+- Azure BLOB Storage Container
 - Azure BLOB Storage Connect String 
 - Azure Cognitive Service - Vision provisioned
 - Azure Vision Service Access Key 
 
-You can also find an ARM template and Azure CLI script for creating the necessary resources in your Azure subscription in the _azure-resources_ folder. 
+You can also find an ARM template and Azure CLI script for creating the Storage Account and the Vision Service in your Azure subscription in the _azureResources_ ZIP file. It contains all you need to create the resources, ARM template, CLI and PowerShell scripts.  
 
 **DISCLAIMER** -- Any code provided in this example is for _illustration purposes only_ and used at your own risk. 
