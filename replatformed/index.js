@@ -1,10 +1,11 @@
 // Azure Discovery Day Sample file 
 // **
 
-// Defaults
+// Defaults :: Please provide the valus which apply to your subscription
 
 let DefaultContainerName = "<yourContainerName>";
 let StorageConnectionString = "<yourConnectStringToStorageAccount>";
+let DefaultVisionKey = "<yourVisionApiKey>";
 
 // Dependencies
 
@@ -98,7 +99,7 @@ const visionDescribe = async (imageUrl) => {
             headers: {
                 'Content-Type': 'application/json',
                 'Content-Length': visionPayload.length,
-                'Ocp-Apim-Subscription-Key' : '<yourVisionApiKey>'
+                'Ocp-Apim-Subscription-Key' : DefaultVisionKey
             }
         };
         
