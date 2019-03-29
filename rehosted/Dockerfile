@@ -1,9 +1,9 @@
 FROM node:8
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY ../package*.json ./
 RUN npm install
 
-COPY ../replatformed .
+COPY ../replatformed ./replatformed
 
 EXPOSE 3000
 CMD [ "npm", "run r" ]
