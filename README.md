@@ -16,4 +16,6 @@ In order to follow along with the code in this example, you will need to have
 - Azure Cognitive Service - Vision provisioned
 - Azure Vision Service Access Key 
 
+You can also find an ARM template and Azure CLI script for creating the necessary resources in your Azure subscription. 
+
 **DISCLAIMER** -- Any code provided in this example is for _illustration purposes only_ and used at your own risk. 
