@@ -3,9 +3,13 @@
 
 // Defaults :: Please provide the valus which apply to your subscription
 
-let DefaultContainerName = "<yourContainerName>";
-let StorageConnectionString = "<yourConnectStringToStorageAccount>";
-let DefaultVisionKey = "<yourVisionApiKey>";
+// let DefaultContainerName = "<yourContainerName>";
+//let StorageConnectionString = "<yourConnectStringToStorageAccount>";
+// let DefaultVisionKey = "<yourVisionApiKey>";
+
+DefaultContainerName = "images";
+StorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=phwecker00blob;AccountKey=huFdA9TTBPAurq4ecg8f7v5VGnla96Zuz0nwXXA5zvaBK/SwD3MlQsnYbrLdkTn9Pr+p5uWC/SdlL31sujGX6Q==;EndpointSuffix=core.windows.net";
+DefaultVisionKey = "902a0535e90c47e1873c719e1cd5db27";
 
 // Dependencies
 
