@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "libraryImage",
+        "description": "Import from \"libraryImage\" Function App",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://linkedindemo.azure-api.net/libraryImage"
+        },
+        {
+            "url": "https://linkedindemo-northeurope-01.regional.azure-api.net/libraryImage"
+        }
+    ],
+    "paths": {
+        "/": {
+            "put": {
+                "summary": "update",
+                "operationId": "put-update",
+                "requestBody": {
+                    "content": {
+                        "application/json": {}
+                    }
+                },
+                "responses": {}
+            },
+            "post": {
+                "summary": "store",
+                "operationId": "post-store",
+                "requestBody": {
+                    "content": {}
+                },
+                "responses": {}
+            }
+        },
+        "/{id}": {
+            "get": {
+                "summary": "retrieve",
+                "operationId": "get-retrieve",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {}
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "id": 1,
+                                    "content": "sample"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "delete",
+                "operationId": "delete-delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {}
+                },
+                "responses": {}
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
